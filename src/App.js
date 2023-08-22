@@ -33,6 +33,7 @@ export default function App() {
 
   return (
     <section className="container">
+      <h1>Task Management App</h1>
       <TaskForm onAddTask={handleAddTask} />
       <TaskList
         tasks={tasks}

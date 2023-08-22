@@ -1,5 +1,6 @@
 import React from 'react';
 import TaskItem from './TaskItem';
+import './TaskList.css';
 
 export default function TaskList({ tasks, onChangeTask, onDeleteTask }) {
 
@@ -7,7 +8,7 @@ export default function TaskList({ tasks, onChangeTask, onDeleteTask }) {
         <section className="list">
             <ul>
                 {tasks.map((task) => (
-                    <li className="item" key={task.id}>
+                    <li key={task.id}>
                         <TaskItem task={task} onChange={onChangeTask} onDelete={onDeleteTask} />
                     </li>
                 ))}

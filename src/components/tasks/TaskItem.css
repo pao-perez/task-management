@@ -1,0 +1,11 @@
+.item {
+    display: grid;
+    grid-template-columns: repeat(4, 10rem 30rem 30rem 30rem);
+    align-items: center;
+    margin: 1rem;
+}
+
+.item > button {
+    width: max-content;
+    padding: 1rem;
+}

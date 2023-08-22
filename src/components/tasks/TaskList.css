@@ -1,0 +1,8 @@
+li {
+    list-style-type: none;
+}
+
+.list {
+    width: 100%;
+    padding: 1rem;
+}

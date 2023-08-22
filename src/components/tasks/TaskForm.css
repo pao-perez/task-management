@@ -1,0 +1,9 @@
+.form > input {
+    padding: 1rem;
+    margin-right: 1rem;
+}
+
+.form > button {
+    width: max-content;
+    padding: 1rem;
+}
