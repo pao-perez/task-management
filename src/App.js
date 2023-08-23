@@ -3,35 +3,15 @@ import './App.css';
 import Error from './components/Error';
 import TaskForm from './components/tasks/TaskForm';
 import TaskList from './components/tasks/TaskList';
+import { useFetch } from './hooks/useFetch';
 
 export default function App() {
+    const [data, errors] = useFetch('http://localhost:3004/tasks');
     const [tasks, setTasks] = useState([]);
-    const [errors, setErrors] = useState([]);
-
+    
     useEffect(() => {
-        const controller = new AbortController();
-
-        (async () => {
-          try {
-            const signal = controller.signal;
-            const response = await fetch('http://localhost:3004/tasks', {
-              signal: signal
-            });
-            const data = await response.json();
-            setTasks(data);
-          } catch (error) {
-            console.log(error);
-            setErrors([
-              ...errors,
-              error
-            ]);
-          }
-        })();
-      
-        return () => {
-          controller.abort();
-        };
-    }, []);
+      setTasks(data)
+    }, [data]);
 
     function handleAddTask(name) {
       setTasks([
