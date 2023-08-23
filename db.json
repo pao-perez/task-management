@@ -1,0 +1,19 @@
+{
+    "tasks": [
+        {
+            "id": "bd175c9e-2909-4ad3-b256-f3d299a5534a",
+            "name": "Do laundry",
+            "isCompleted": true
+        },
+        {
+            "id": "62a85831-7d03-45e3-89ac-ccc56d5d5d7b",
+            "name": "Buy groceries",
+            "isCompleted": false
+        },
+        {
+            "id": "c4b58f66-0252-437d-b8ce-9e659552cc8d",
+            "name": "Cook dinner",
+            "isCompleted": false
+        }
+    ]
+}
