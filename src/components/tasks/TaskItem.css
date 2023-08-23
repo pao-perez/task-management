@@ -9,3 +9,11 @@
     width: max-content;
     padding: 1rem;
 }
+
+@media (max-width: 768px) {
+    .item {
+        display: grid;
+        grid-template-columns: repeat(4, 2rem 10rem 10rem 10rem);
+        margin: 1rem;
+    }
+}
